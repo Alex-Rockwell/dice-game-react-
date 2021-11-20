@@ -1,0 +1,29 @@
+.RollDice {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.RollDice-btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 2rem 6rem;
+  color: #fff;
+  background-color: #24c91e;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 #ddd;
+  user-select: none;
+  transition: background-color .5s ease;
+}
+
+.RollDice-btn:hover {
+  background-color: #13aa0e;
+  cursor: pointer;
+}
+
+.RollDice-btn-blocked {
+  pointer-events: none;
+  background-color: #0d7a16;
+}

@@ -1,0 +1,23 @@
+.Dice {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.Dice i {
+  font-size: 200px;
+  color: #24c91e;
+}
+
+.Dice-animation {
+  animation-name: dice;
+  animation-duration: 1s;
+}
+
+@keyframes dice {
+  0% {
+    transform: translateY(-5rem) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(720deg);
+  }
+}
