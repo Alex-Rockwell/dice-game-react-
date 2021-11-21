@@ -18,8 +18,8 @@ class RollDice extends Component {
     }, 1000);
   }
   render() {
-    const diceClass = this.state.isRolling ? 'Dice Dice-animation' : 'Dice'
-    const btnClass = this.state.isRolling ? 'RollDice-btn RollDice-btn-blocked' : 'RollDice-btn'
+    const diceClass = `Dice ${this.state.isRolling ? 'Dice-animation' : ''}`
+    const btnClass = `RollDice-btn ${this.state.isRolling ? 'RollDice-btn-blocked' : ''}`
     return (
       <div className="RollDice">
         <div className="RollDice-container">
@@ -34,7 +34,7 @@ class RollDice extends Component {
             />
           </div>
           <button className={btnClass} onClick={this.roll}>
-            Roll Dice
+            {this.state.isRolling ? 'Rolling...' : 'Roll dice'}
           </button>
         </div>
       </div>
